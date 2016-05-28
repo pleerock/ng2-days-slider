@@ -25,8 +25,8 @@ First is a paginator that shows pages and reacts when they change:
 ## Sample
 
 ```typescript
-import {Component} from "angular2/core";
-import {DaysSlider} from "ng2-days-slider/ng2-days-slider";
+import {Component} from "@angular/core";
+import {DaysSlider} from "ng2-days-slider";
 
 @Component({
     selector: "app",

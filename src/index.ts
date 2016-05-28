@@ -1,4 +1,4 @@
-import {Component, Output, EventEmitter, Input} from "angular2/core";
+import {Component, Output, EventEmitter, Input} from "@angular/core";
 
 @Component({
     selector: "days-slider",
@@ -24,7 +24,7 @@ ul.days-slider li.current-date a {
                 <span aria-hidden="true">&laquo;</span>
             </a>
         </li>
-        <li *ngFor="#date of dates" 
+        <li *ngFor="let date of dates" 
             [class.active]="areDaysEqual(date, selectedDate)"
             [class.current-date]="!areDaysEqual(date, selectedDate) && areDaysEqual(date, currentDate)" 
             (click)="changeDate(date)">
